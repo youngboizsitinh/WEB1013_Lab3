@@ -16,3 +16,15 @@
 .kieu5 {
     color: rgb(9, 211, 9);
 }
+.header::before {
+    content: attr(data-text);
+    position: absolute;
+    text-align: center;
+    transform-origin: bottom;
+    transform: rotateX(180deg);
+    line-height: 0.9em;
+    background: linear-gradient(0deg, blue 0, transparent 50% );
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.3;
+}
